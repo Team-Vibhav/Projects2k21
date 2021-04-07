@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Virtual Telepresence Robot</title>
-    <link rel="stylesheet" href="../../_common/tailwind.min.css" />
-  </head>
-  <body class="bg-black">
-    <div class="bg-black text-gray-200 min-h-screen">
-      <div class="container max-w-6xl m-auto p-4">
-        <header class="py-4 my-4">
-          <div class="text-5xl"><span style="color:#f1cb73;">VIBHAV - </span>Project A</div>
-        </header>
-        
-        <main>
-          <!-- VIDEO -->
-          <div class="video m-auto h-96 max-w-3xl">
-            <iframe
-              class="video-frame w-full h-full object-cover"
-              src="https://youtube.com/embed/FadEqMEesXM"
-            ></iframe>
-          </div>
-          <!-- VIDEO END-->
-          <div class="text-4xl my-5" style="color:#f1cb73;">Images</div>
-          <div class="gallery grid grid-cols-2 lg:grid-cols-3 gap-1 my-6">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Telepresence Robot</title>
+  <link rel="stylesheet" href="../../_common/tailwind.min.css" />
+</head>
+
+<body class="bg-black">
+  <div class="bg-black text-gray-200 min-h-screen">
+    <div class="container max-w-6xl m-auto p-4">
+      <header class="py-4 my-4">
+        <div class="text-5xl"><span style="color:#f1cb73;">VIBHAV - </span>Virtual Telepresence Robot</div>
+      </header>
+
+      <main>
+        <!-- VIDEO -->
+        <div class="video m-auto h-96 max-w-3xl">
+          <iframe class="video-frame w-full h-full object-cover" src="https://youtube.com/embed/FadEqMEesXM"></iframe>
+        </div>
+        <!-- VIDEO END-->
+        <div class="text-4xl my-5" style="color:#f1cb73;">Images</div>
+        <div class="gallery grid grid-cols-2 lg:grid-cols-3 gap-1 my-6">
           <!-- IMAGE -->
           <div class="pic bg-gray-800 w-full" style="min-height: 10em">
             <img src="../assets/images/dummy.png" alt="" class="object-cover w-full h-full" />
@@ -37,24 +36,30 @@
           <div class="pic bg-gray-800 w-full" style="min-height: 10em"></div>
         </div>
         <div class="text-4xl" style="color:#f1cb73;">Description :</div>
-          <p class="text-gray-400 my-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            tempora facere magni pariatur, autem cum! Cum unde quos nihil
-            voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusamus quaerat voluptatem expedita atque tenetur aliquid quisquam
-            eum provident molestias voluptates! Culpa totam perferendis tempora
-            molestiae rem ab doloribus cum voluptas sed nostrum error
-            exercitationem, deserunt quasi nobis corporis voluptate similique
-            ut? Nemo, nihil! Nisi enim ea voluptate laudantium est atque beatae
-            nulla eligendi aspernatur libero sapiente, fugit amet optio nemo
-            voluptates? Iste deserunt nihil voluptatibus aliquam vero
-            repellendus voluptate aspernatur minus, magnam tempora. Magnam
-            perspiciatis impedit perferendis cumque eum autem ab ut quod minima
-            nisi dicta placeat voluptatem, odit provident unde facilis ex
-            reiciendis adipisci, nobis dolore, rerum porro officiis.
-          </p>
-        </main>
-      </div>
+        <p class="text-gray-400 my-6">
+          Virtual telepresence robot consists of a robot with ESP 32 camera module which is placed on a remote location
+          to capture surroundings in visual form using Arduino Uno.
+          The captured visuals are displayed on the user's virtual reality headset processed by Arduino Uno. The video
+          stream is displayed on the screen of the smartphone to be shown in two different parts. This is done to get
+          accurate visuals through the VR lens. There are two eyepieces in VR headset, hence dual-screen mode is used.
+          VR headset utilized is Google cardboard which is widely available.
+          Virtual telepresence robot utilizes 11.1V Li-polymer battery which gives enough power to make bot last for
+          complete venture without any interruption.
+          Transmission is done using NRF24L01 shield and HC05 bluetooth module which relay the movement instructions to
+          2DC and 2 servo motors. Use of NRF24L01 greatly increases the range of robot from conventional 10 meters to
+          100 meters. Also the latency of NRF24L01 is 130 µs, this gives user’s real-time control and experience.
+          An added feature allows the user to move the robot in direction of the user's head movement using an MPU 6050
+          sensor hooked with an arduino in the user's VR headset. MPU 6050 sensor allows tracking in 6 directions thus
+          allowing flexible movement control.
+          Virtual telepresence robot has vast amounts of untapped potential which can be used in various fields. VTR can
+          be deployed as a sensitisation robot in medical accommodations. VTR can also act as a utility handler for
+          bedridden patients. While in tourism VTR will be able to provide experience of exotic locations at the comfort
+          of your home. During pandemic situation VTR doubles as an surveillance robot for the affected areas.
+
+        </p>
+      </main>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
