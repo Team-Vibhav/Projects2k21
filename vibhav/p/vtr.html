@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Virtual Telepresence Robot</title>
   <link rel="stylesheet" href="../../_common/tailwind.min.css" />
+  <link rel="stylesheet" href="../assets/css/vibhav.css">
 </head>
 
 <body class="bg-black">
@@ -25,37 +26,80 @@
         <div class="text-4xl my-5" style="color:#f1cb73;">Images</div>
         <div class="gallery grid grid-cols-2 lg:grid-cols-3 gap-1 my-6">
           <!-- IMAGE -->
-          <div class="pic bg-gray-800 w-full" style="min-height: 10em">
-            <img src="../assets/images/dummy.png" alt="" class="object-cover w-full h-full" />
-          </div>
-          <!-- IMAGE END -->
-          <div class="pic bg-gray-800 w-full" style="min-height: 10em"></div>
-          <div class="pic bg-gray-800 w-full" style="min-height: 10em"></div>
-          <div class="pic bg-gray-800 w-full" style="min-height: 10em"></div>
-          <div class="pic bg-gray-800 w-full" style="min-height: 10em"></div>
-          <div class="pic bg-gray-800 w-full" style="min-height: 10em"></div>
-        </div>
-        <div class="text-4xl" style="color:#f1cb73;">Description :</div>
-        <p class="text-gray-400 my-6">
-          Virtual telepresence robot consists of a robot with ESP 32 camera module which is placed on a remote location
-          to capture surroundings in visual form using Arduino Uno.
-          The captured visuals are displayed on the user's virtual reality headset processed by Arduino Uno. The video
-          stream is displayed on the screen of the smartphone to be shown in two different parts. This is done to get
-          accurate visuals through the VR lens. There are two eyepieces in VR headset, hence dual-screen mode is used.
-          VR headset utilized is Google cardboard which is widely available.
-          Virtual telepresence robot utilizes 11.1V Li-polymer battery which gives enough power to make bot last for
-          complete venture without any interruption.
-          Transmission is done using NRF24L01 shield and HC05 bluetooth module which relay the movement instructions to
-          2DC and 2 servo motors. Use of NRF24L01 greatly increases the range of robot from conventional 10 meters to
-          100 meters. Also the latency of NRF24L01 is 130 µs, this gives user’s real-time control and experience.
-          An added feature allows the user to move the robot in direction of the user's head movement using an MPU 6050
-          sensor hooked with an arduino in the user's VR headset. MPU 6050 sensor allows tracking in 6 directions thus
-          allowing flexible movement control.
-          Virtual telepresence robot has vast amounts of untapped potential which can be used in various fields. VTR can
-          be deployed as a sensitisation robot in medical accommodations. VTR can also act as a utility handler for
-          bedridden patients. While in tourism VTR will be able to provide experience of exotic locations at the comfort
-          of your home. During pandemic situation VTR doubles as an surveillance robot for the affected areas.
 
+          <div class="pic bg-gray-800 w-full" style="min-height: 10em">
+            <img src="../assets/images/vtr/4.webp" alt="" class="object-cover w-full h-full" />
+          </div>
+
+          <div class="pic bg-gray-800 w-full" style="min-height: 10em">
+            <img src="../assets/images/vtr/5.webp" alt="" class="object-cover w-full h-full" />
+          </div>
+
+          <div class="pic bg-gray-800 w-full" style="min-height: 10em">
+            <img src="../assets/images/vtr/6.webp" alt="" class="object-cover w-full h-full" />
+          </div>
+          <div class="pic bg-gray-800 w-full" style="min-height: 10em">
+            <img src="../assets/images/vtr/1.webp" alt="" class="object-cover w-full h-full" />
+          </div>
+
+          <div class="pic bg-gray-800 w-full" style="min-height: 10em">
+            <img src="../assets/images/vtr/2.webp" alt="" class="object-cover w-full h-full" />
+          </div>
+
+          <div class="pic bg-gray-800 w-full" style="min-height: 10em">
+            <img src="../assets/images/vtr/3.webp" alt="" class="object-cover w-full h-full" />
+          </div>
+
+
+          <!-- IMAGE END -->
+          <!-- <div class="pic bg-gray-800 w-full" style="min-height: 10em"></div>
+          <div class="pic bg-gray-800 w-full" style="min-height: 10em"></div>
+          <div class="pic bg-gray-800 w-full" style="min-height: 10em"></div>
+          <div class="pic bg-gray-800 w-full" style="min-height: 10em"></div>
+          <div class="pic bg-gray-800 w-full" style="min-height: 10em"></div> -->
+        </div>
+        <div class="text-4xl" style="color:#f1cb73;">Description:</div>
+        <h1 class="text-gray-200 my-6">Objective:</h1>
+        <p class="text-gray-400 my-6">
+          This project aims to create an illusion of telepresence with the help of an Arduino operated bot, a VR headset
+          and some other components.
+        </p>
+        <h1 class="text-gray-200 my-6">Abstract:</h1>
+        <p class="text-gray-400 my-6">
+          This robot with a camera is placed in a remote location to capture the environment in visual form. The
+          captured
+          visuals are displayed on the user’s virtual reality (VR) headset. An added feature allows the camera to move
+          in
+          the direction of the user’s head movements. This gives the user a real-time experience as if he is present
+          where
+          the virtual telepresence robot is located.
+        </p>
+        <h1 class="text-gray-200 my-6">Execution:</h1>
+        <p class="text-gray-400 my-6">
+          • First, a 4 wheeled bot is made using Arduino. It can be controlled through an app installed on the user’s
+          smartphone.<br>
+          • A camera is mounted on the bot which is capable of horizontal and vertical movement with the help of 2
+          servo motors.<br>
+          • The camera’s video is viewed by the user on a smartphone in a VR headset. The headset is equipped
+          with an MPU6050 sensor.<br>
+          • The sensor keeps track of the user’s head movements and sends this data to Arduino.<br>
+          • Uno, with the help of servo motors, moves the camera accordingly, thus creating an illusion of
+          telepresence.
+        </p>
+        <h1 class="text-gray-200 my-6">Applications:</h1>
+        <p class="text-gray-400 my-6">
+          • Exploring new and unknown locations.<br>
+          • To get a virtual experience of being present at a distant place (robot’s location).<br>
+          • To spy on dangerous locations.<br>
+          • Save human lives by alerting them about possible dangers.<br>
+          • To prevent the spread of infectious diseases.<br>
+          • For virtual tourism.<br>
+
+
+        </p>
+        <p>
+          <b>GitHub link: </b><a target="_blank" href="https://github.com/Team-Vibhav/VTB">
+            https://github.com/Team-Vibhav/VTB</a>
         </p>
       </main>
     </div>
